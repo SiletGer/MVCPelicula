@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h1>Welcome</h1>
+
+<ul>
+    @{
+        int numVeces = (int)ViewData["numVeces"];
+        int count = (int)ViewData["count"];
+        for (int i = 0; i < numVeces; i++)
+        {
+            <li>@ViewData["nombre"], veces mostrado = @i</li>
+        }
+    }
+</ul>
